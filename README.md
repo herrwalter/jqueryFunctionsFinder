@@ -16,3 +16,15 @@ Open the page and your console and see the log.
 
 
                       
+EXAMPLE:
+
+add this to the head in your html
+
+`<script src="path/to/ShowJQueryFunctions" type="text/javascript" ></script> `
+
+add this before the closing body tag (`</body>`):
+
+`<script>
+var jqf = new ShowJQueryFunctions();
+    jqf.init( ['ShowJQueryFunctions.js','jquery.min.js'] );
+<script>`
