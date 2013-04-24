@@ -1,6 +1,6 @@
 /**
 * This module will show you all the Jquery functions you have 
-* used in on this page.
+* used in on your page.
 * @author Wouter Wessendorp 
 */
 var ShowJQueryFunctions = function () {
