@@ -13,3 +13,6 @@ deeper into javascript.
 Add this on the bottom of your page between script tags.
 Open the page and your console and see the log.
 
+
+
+                      
