@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+//jQuery selector (ie8 only supports DOM level 2 selectors)
+$ = document.querySelectorAll.bind( document );
+
 //.hasClass()
 Element.prototype.hasClass = function ( cName ){ 
   return this.className.split( ' ' ).indexOf( cName ) > -1 
@@ -23,3 +33,21 @@ Element.prototype.removeClass = function ( cName ) {
     this.className = classNames.join( ' ' );
   }
 }
+
+//.find() after searching the dom with the querySelectorAll.
+NodeList.prototype.find = function ( selector ){
+  var nodeList = [];
+	for( el in this ){
+		if( this[el] instanceof Element ){
+			var a = this[el].querySelectorAll( selector );
+			if( a.length > 0 ){
+				for( i in a ){
+					nodeList.indexOf( a.item(i) ) > -1 ? true : nodeList.push( a.item(i) );
+				}
+			}
+		}
+	}
+	return nodeList;
+}
+
+
