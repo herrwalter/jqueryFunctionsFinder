@@ -59,13 +59,16 @@ Element.prototype.is = function ( selector ){
 
 //.closest()
 Element.prototype.closest = function ( selector ){
-	while( this.parentNode.tagName !== 'HTML' ){
+	var parent = this.parentNode;
+	while( parent.tagName !== 'HTML' ){
+		
 		var elements = document.querySelectorAll( selector );
 			for( index in elements ){
-				if( elements[index] === this.parentNode ){
-					return this.parentNode;
+				if( elements[index] === parent ){
+					return parent;
 				}
 			}
+		parent = parent.parentNode;
 	}
 	return undefined;
 }
