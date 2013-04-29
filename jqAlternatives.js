@@ -76,12 +76,11 @@ Element.prototype.closest = function ( selector ){
 Element.prototype.on = function ( type, callback) { 
 	if (this.addEventListener) {
 	  this.addEventListener(type,callback,false);
-	  this.addEventListener(type,callback,false);
 	} else if(this.attachEvent) {
 	  this.attachEvent('on' + type,callback);
-	  this.attachEvent('on' + type,callback);
 	} else {
-	  this[type] = callback;
-	  this[type] = callback;
+	  if( this[type] ){
+	  	this[type] = callback;
+	  }
 	}
 }
