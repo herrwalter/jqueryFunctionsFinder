@@ -46,3 +46,26 @@ NodeList.prototype.find = function ( selector ){
 //.attr()
 Use this[attribute] else .getAttribute() // ie5-7 returns object on style attribute
 
+//.is()
+Element.prototype.is = function ( selector ){
+  var elements = document.querySelectorAll( selector );
+  for( index in elements ){
+  	if( elements[index] === this ){
+  		return true;
+  	}
+  }
+  return false;
+}
+
+//.closest()
+Element.prototype.closest = function ( selector ){
+	while( this.parentNode.tagName !== 'html' ){
+		var elements = document.querySelectorAll( selector );
+			for( index in elements ){
+				if( elements[index] === this.parentNode ){
+					return this.parentNode;
+				}
+			}
+	}
+	return undefined;
+}
