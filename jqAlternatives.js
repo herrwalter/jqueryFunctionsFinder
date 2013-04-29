@@ -59,7 +59,7 @@ Element.prototype.is = function ( selector ){
 
 //.closest()
 Element.prototype.closest = function ( selector ){
-	while( this.parentNode.tagName !== 'html' ){
+	while( this.parentNode.tagName !== 'HTML' ){
 		var elements = document.querySelectorAll( selector );
 			for( index in elements ){
 				if( elements[index] === this.parentNode ){
