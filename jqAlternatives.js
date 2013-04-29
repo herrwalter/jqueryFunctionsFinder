@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 //jQuery selector (ie8 only supports DOM level 2 selectors)
 $ = document.querySelectorAll.bind( document );
 
@@ -50,4 +43,6 @@ NodeList.prototype.find = function ( selector ){
 	return nodeList;
 }
 
+//.attr()
+Use this[attribute] else .getAttribute() // ie5-7 returns object on style attribute
 
