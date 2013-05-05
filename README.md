@@ -27,4 +27,4 @@ add this before the closing body tag (`</body>`):
 `<script>
 var jqf = new ShowJQueryFunctions();
     jqf.init( ['ShowJQueryFunctions.js','jquery.min.js'] );
-<script>`
+</script>`
