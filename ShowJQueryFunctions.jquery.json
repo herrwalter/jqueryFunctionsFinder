@@ -1,0 +1,36 @@
+{
+    "name": "ShowJQueryFunctions",
+    "title": "Show JQuery functions",
+    "description": "jQuery plugin for showig what jQuery functions you use. Useful for custom build our reflection on your jQuery use",
+    "keywords": [
+        "functions",
+        "finder",
+        "search functions",
+        "show jQuery functions"
+    ],
+    "version": "1.0",
+    "author": {
+        "name": "jQuery Foundation and other contributors",
+        "url": "https://github.com/jquery/jquery-color/blob/2.1.2/AUTHORS.txt"
+    },
+    "maintainers": [
+        {
+            "name": "Corey Frang",
+            "email": "gnarf37@gmail.com",
+            "url": "http://gnarf.net"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/jquery/jquery-color/issues",
+    "homepage": "https://github.com/jquery/jquery-color",
+    "docs": "https://github.com/jquery/jquery-color",
+    "download": "http://code.jquery.com/#color",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
