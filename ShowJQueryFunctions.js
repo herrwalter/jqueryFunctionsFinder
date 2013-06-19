@@ -27,9 +27,9 @@ var ShowJQueryFunctions = function ( exclusions ) {
     this.allJavascript = "";
     /**
      * @var functionsFound =  all jQuery functions found in the all the javascript
-     * @type Array
+     * @type Object
      */
-    this.functionsFound = [];
+    this.functionsFound = {};
     
     /**
      * @var excludes = Array exclusions of filenames that should not be requested or serached. 
@@ -93,7 +93,7 @@ var ShowJQueryFunctions = function ( exclusions ) {
     this.matchFunctions = function () {
         for( index in this.jqf ){
             if( this.allJavascript.indexOf( this.jqf[index] ) !== -1 ){
-                this.functionsFound.push( this.jqf[index] );
+    			this.functionsFound[ this.jqf[index] ] = this.allJavascript.split( this.jqf[index]).length -1;
             }
         }
     }
@@ -102,8 +102,8 @@ var ShowJQueryFunctions = function ( exclusions ) {
      * Adds a little style to the log so it can be found easily. 
      */
     this.showFunctions = function (){
-        for( index in this.functionsFound ){
-            console.log( '%c  JQUERY FUNCTION DETECTED: ', 'background:yellow; color:blue',  this.functionsFound[index] )
+        for( prop in this.functionsFound ){
+            console.log( '%c  JQUERY FUNCTION DETECTED: ' +this.functionsFound[prop] + ' times. ', 'background:yellow; color:blue',  prop   )
         }
     }
     
