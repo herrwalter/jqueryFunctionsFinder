@@ -1,6 +1,6 @@
 {
     "name": "jQueryFunctionsFinder",
-    "title": "Shows your JQuery functions use",
+    "title": "jQueryFunctionsFinder",
     "description": "jQuery plugin for showing what jQuery functions you use. Useful for custom build our reflection on your jQuery use",
     "keywords": [
         "functions",
@@ -11,13 +11,13 @@
     "version": "1.0.10",
     "author": {
         "name": "Wouter Wessendorp and other contributors",
-        "url": "https://github.com/herrwalter/jqueryFunctionsFinder/"
+        "url": "https://twitter.com/HerrWalter88"
     },
     "maintainers": [
         {
             "name": "Wouter Wessendorp",
             "email": "herrwalter@gmail.com",
-            "url": "https://github.com/herrwalter/"
+            "url": "https://twitter.com/HerrWalter88"
         }
     ],
     "licenses": [
